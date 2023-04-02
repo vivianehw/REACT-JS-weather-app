@@ -1,0 +1,18 @@
+.localInfoArea {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.weatherInfoArea {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.74)
+}
+
+.localInfoArea, .weatherInfoArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
