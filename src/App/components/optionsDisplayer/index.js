@@ -7,7 +7,7 @@ import langList from "../../assets/lang";
 
 export default function OptionsDisplayer(props) {
 
-    const [unitChoice, setUnitChoice] = useState('standard');
+    const [unitChoice, setUnitChoice] = useState('metric');
     const [langChoice, setLangChoice] = useState('pt_br');
 
     props.push_data(unitChoice, langChoice);

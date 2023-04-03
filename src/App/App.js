@@ -21,35 +21,6 @@ function App() {
     setLang(langData);
   }
 
-  /*
-  useEffect(() => {
-  // declare the async data fetching function
-  const fetchData = async () => {
-    // get the data from the api
-    const data = await fetch();
-    // convert the data to json
-    const json = await response.json();
-
-    // set state with the result
-    setData(json);
-  }
-
-  // call the function
-  fetchData()
-    // make sure to catch any error
-    .catch(console.error);;
-}, [])
-*/
-
-  /*
-    useEffect(() => {
-      url.get(`weather?appid=${apiKey}&lat=44.34&lon=10.99&${unit}&${lang}`)
-        .then((res) => {
-          setWeatherData(res.data);
-        })
-    }, []);
-  */
-
   useEffect(() => {
     const getData = async () => {
       const data = await url.get(
@@ -61,7 +32,7 @@ function App() {
     };
 
     getData().catch(console.error)
-  }, [])
+  }, [unit, lang])
 
     if (loading === true) {
       return(

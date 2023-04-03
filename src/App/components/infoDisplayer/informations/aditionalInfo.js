@@ -6,8 +6,7 @@ function AditionalInfo() {
         <div className="infoSquare">
             <p>sunrise</p>
             <p>sunset</p>
-            <p>humidade</p>
-            <p>velocidade do vento</p>
+            <p>umidade</p>
         </div>
     )
 };
